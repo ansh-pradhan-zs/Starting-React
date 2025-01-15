@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pongal Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <h2>Submit Your Details</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="input-field">
+            </div>
+            <div>
+                <button id="submit-btn" class="btn">Submit</button>
+            </div>
+        </form>
+        <div id="details" class="details">
+            <h2>Your Details</h2>
+            <div class="detail-item">
+                <span class="label">Name:</span>
+                <span id="getname" class="value"></span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Email:</span>
+                <span id="getemail" class="value"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="greeting">
+        <h2>Greeting</h2>
+        <div>
+            <span>Your Greeting is: </span>
+            <span id="greet-msg" class="greet-msg"></span>
+        </div>
+        <div class="form-group">
+            <label for="greet">Write the greeting you want to display</label>
+            <input type="text" name="greet" id="greet" class="input-field">
+        </div>
+        <button id="save-greeting" class="btn">Save Greeting</button>
+    </div>
+
+    <div class="theme-toggle">
+        <button id="toggle-theme" class="btn">Toggle Theme</button>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
